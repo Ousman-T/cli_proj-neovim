@@ -9,20 +9,20 @@ int main(void) {
   int input;
   int count = 0;
 
-  printf("I'm thinking of a number from 1-100\n");
-  scanf("%d", &input);
   while (input != target) {
+    printf("I'm thinking of a number between 1 and 100...\n");
+    scanf("%d", &input);
     if (input < target) {
       printf("Guess too low!\n");
       count++;
-      break;
+      continue;
     } else if (input > target) {
       printf("guess too high!\n");
       count++;
-      break;
+      continue;
     } else {
       printf("You got it, nice! It only took you %d tries\n");
-      break;
+      continue;
     }
   }
   return 0;
