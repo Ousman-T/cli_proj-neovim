@@ -1,10 +1,10 @@
 #include <math.h>
 #include <stdio.h>
 #include <time.h>
-#include <__clang_cuda_libdevice_declares.h>
+#include <stdlib.h>
 
-main() {
-	int ranNum = srand(time(NULL));
+void main(void) {
+	srand(time(NULL));
 	int target = rand() % 100 + 1;
 	int input;
 
