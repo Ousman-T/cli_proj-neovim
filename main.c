@@ -1,4 +1,3 @@
-#include <math.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
@@ -15,14 +14,11 @@ int main(void) {
     if (input < target) {
       printf("Guess too low!\n");
       count++;
-      continue;
     } else if (input > target) {
       printf("guess too high!\n");
       count++;
-      continue;
     } else {
-      printf("You got it, nice! It only took you %d tries\n");
-      continue;
+      printf("You got it, nice! It only took you %d tries\n", count);
     }
   }
   return 0;
